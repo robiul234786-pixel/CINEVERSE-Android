@@ -12,11 +12,12 @@ jobs:
 
       - name: Arrange files
         run: |
-          mkdir -p app/src/main/java/com/cineverse/app app/src/main/assets
+          mkdir -p app/src/main/java/com/cineverse/app app/src/main/assets app/src/main/res/drawable
           mv app-build.gradle.kts app/build.gradle.kts
           mv AndroidManifest.xml app/src/main/AndroidManifest.xml
           mv MainActivity.kt app/src/main/java/com/cineverse/app/MainActivity.kt
           mv index.html app/src/main/assets/index.html
+          mv ic_launcher.xml app/src/main/res/drawable/ic_launcher.xml
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
