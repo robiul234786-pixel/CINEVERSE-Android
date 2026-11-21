@@ -73,8 +73,8 @@ nav button span{font-size:19px;padding:3px 14px;border-radius:50px}nav button.on
 <div id="app"><main id="main"></main><nav id="nav"></nav><div id="modal"></div><div id="toast"></div></div>
 <script>
 /* ====== CONFIG ====== */
-const FIREBASE_CONFIG = null; // {apiKey:"...",authDomain:"...",projectId:"...",appId:"..."}
-const ADMIN_EMAILS = [];      // Firebase মোডে অ্যাডমিন ইমেইল
+const FIREBASE_CONFIG = {apiKey:"AIzaSyARICV7LqTZiHjJST82ISsVupvzbvIjxYU",authDomain:"cineverse-9c7f9.firebaseapp.com",projectId:"cineverse-9c7f9",storageBucket:"cineverse-9c7f9.firebasestorage.app",messagingSenderId:"1070403288391",appId:"1:1070403288391:web:0cffbd253a95f988966062"}; // {apiKey:"...",authDomain:"...",projectId:"...",appId:"..."}
+const ADMIN_EMAILS = ["robiul234786@gmail.com"];      // Firebase মোডে অ্যাডমিন ইমেইল
 /* ==================== */
 const FB = !!FIREBASE_CONFIG && typeof firebase!=="undefined";
 let auth,db; if(FB){firebase.initializeApp(FIREBASE_CONFIG);auth=firebase.auth();db=firebase.firestore();}
