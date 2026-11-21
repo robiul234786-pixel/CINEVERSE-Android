@@ -14,9 +14,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
 
-// Cloudflare Pages-এ আপলোড করা সাইটের লিংক এখানে বসাও (যেমন "https://cineverse.pages.dev").
-// ফাঁকা রাখলে অ্যাপের ভেতরের কপি (assets/index.html) চলবে।
-private const val APP_URL = ""
+private const val APP_URL = "https://cineverse-bd2026.pages.dev"
 
 class MainActivity : Activity() {
     private lateinit var web: WebView
@@ -60,7 +58,6 @@ class MainActivity : Activity() {
                 return true
             }
         }
-        // YouTube ফুলস্ক্রিন সাপোর্ট
         web.webChromeClient = object : WebChromeClient() {
             override fun onShowCustomView(view: View, cb: CustomViewCallback) {
                 customView = view
